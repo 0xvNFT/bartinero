@@ -214,20 +214,5 @@
 
 </body>
 
-<footer>
-<div class="container">
-
-    <div class="row align-items-center d-flex">
-        <div class="col-lg-6">
-            <img src="{{ asset('img/bart-logo-white.svg') }}" alt=""> 
-        </div>
-        <div class="col-lg-6">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms and Conditions</a>
-        </div>
-    </div>
-</div>
-</footer>
-
 @endsection
 
