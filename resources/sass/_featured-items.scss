@@ -1,0 +1,78 @@
+#featured-items {
+
+    padding: 3rem 0;
+
+
+    .featured-header {
+        padding-bottom: 2rem;
+    }
+
+
+    h4 {
+        font-family: 'Maragsâ-Display';
+        src: url('/fonts/Maragsâ-Display.woff');
+        color: black;
+        font-size: 32px;
+    }
+
+    a {
+        font-family: 'Epilogue', sans-serif;
+        color: #9e9e9e;
+        float: right;
+        text-align: right;
+        padding-left: 3rem;
+    } 
+
+    .grid {
+        .card {
+
+            background-color: transparent;
+            border: 1px solid black;
+
+            p {
+                font-family: 'Epilogue', sans-serif;
+                color: black;
+                margin-bottom: 0.1rem;
+                font-size: 12px;
+            }
+
+            h6 {
+                font-family: 'Epilogue', sans-serif;
+                color: white;
+                margin-bottom: 0.1rem;
+                font-size: 12px;
+            }
+
+            h5 {
+                font-family: 'Maragsâ-Display';
+                src: url('/fonts/Maragsâ-Display.woff');
+                color: black;
+                font-size: 24px;
+                margin-bottom: 0;
+            }
+
+            .badge {
+                float: right;
+                background: rgb(214,12,209);
+                background: linear-gradient(22deg, rgba(214,12,209,1) 0%, rgba(255,94,0,1) 100%);
+                position: absolute;
+                padding: 0.7rem;
+                margin: 1.25rem;
+            }
+        }
+
+        .row:nth-child(1) {
+            margin-bottom: 2rem;
+        }
+
+        button {
+            color: white;
+            width: 100%;
+            border: 1px solid black;
+            font-family: "Epilogue", sans-serif;
+            padding: 0.5rem;
+            background: black;
+            margin-top: 2rem;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+footer {
+    background-color: black;
+    padding: 2rem 0;
+    align-items: center;
+    display: flex;
+
+    img {
+        height: 25px;
+    }
+
+    h4 {
+        margin-bottom: 0;
+        font-family: 'Epilogue';
+        font-size: 14px;
+        color: white;
+        padding-top: 0.5rem;
+        float: right;
+        text-align: right;
+    }
+
+    a {
+        margin-bottom: 0;
+        font-family: 'Epilogue';
+        font-size: 14px;
+        color: white;
+        float: right;
+        text-align: right;
+        padding-left: 3rem;
+    }
+
+    p {
+        margin-bottom: 0;
+        font-family: 'Epilogue';
+        font-size: 14px;
+        color: white;
+        padding-top: 0.3rem;
+        float: right;
+        text-align: right;
+        padding-left: 1.8rem;
+    }
+}
