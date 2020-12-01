@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Epilogue);
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Epilogue);@charset "UTF-8";
 
 @font-face {
   font-family: Maragsâ-Display;
@@ -185,7 +185,7 @@
 
 footer {
   background-color: black;
-  padding: 2rem 0;
+  padding: 1.8rem 0;
   align-items: center;
   display: flex;
 }

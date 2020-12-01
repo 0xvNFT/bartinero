@@ -15,24 +15,9 @@
 
     </head>
 
-    {{-- <header>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <a href="/"><img src="{{ asset('img/bart-logo-black.svg') }}" alt=""> </a>
-                </div>
-                <div class="col-lg-8">
-                    <a href="#"><img src="{{ asset('img/bart-cart-icon-alt.svg') }}" alt="">Deals (0)</a>
-                    <a href="/about">Register</a>
-                    <a href="/services">Log in</a>
-                </div>
-            </div>
-        </div>
-
-    </header> --}}
 
     <body>
+
         <nav class="navbar navbar-expand-lg navbar-light justify-content-between sticky-top">
             <div class="container">
                 <div>
@@ -43,30 +28,23 @@
                     <a href="/login">Log In</a>
                     <a href="/register">Register</a>
                 </div>
-                
-                
-
             </div>
         </nav>
         
-
-
-
         @yield('content')
 
         <footer>
             <div class="container">
-            
                 <div class="row align-items-center d-flex">
                     <div class="col-lg-6">
                         <img src="{{ asset('img/bart-logo-white.svg') }}" alt=""> 
                     </div>
+
                     <div class="col-lg-6">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms and Conditions</a>
                     </div>
                 </div>
             </div>
-            </footer>
-
+        </footer>
 </html>
