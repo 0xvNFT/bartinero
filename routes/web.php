@@ -21,6 +21,18 @@ use Illuminate\Support\Facades\Route;
 //     return view('pages.about');
 // });
 
-Route::get('/pages', function () {
+Route::get('/', function () {
     return view('pages.index');
+});
+
+Route::get('/single', function () {
+    return view('pages.single');
+});
+
+Route::get('/login', function () {
+    return view('pages.login');
+});
+
+Route::get('/register', function () {
+    return view('pages.register');
 });

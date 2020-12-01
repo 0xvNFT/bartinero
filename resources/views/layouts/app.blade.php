@@ -33,6 +33,8 @@
         
         @yield('content')
 
+    </body>
+
         <footer>
             <div class="container">
                 <div class="row align-items-center d-flex">

@@ -43,7 +43,15 @@
   padding: 3rem 0;
 }
 
+#featured-items .product-categories {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
 #featured-items .featured-header {
+  margin-top: 2rem;
   padding-bottom: 2rem;
 }
 

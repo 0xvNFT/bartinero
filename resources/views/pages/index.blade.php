@@ -1,12 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+ 
 <section id="hero">
-
     <div class="container">
-
         <div class="row align-items-center justify-content-center d-flex">
-
             <div class="col-auto">
                 <img src="{{ asset('img/bart-hero-banner.png') }}" alt="">
             </div>
@@ -15,21 +13,16 @@
                 <h1>Make a deal today.<br>Trade with a Las Piñero.</h1>
                 <input type="text" placeholder="Find an item...">
             </div>
-
-            
-
         </div>
-
     </div>
-
 </section>
 
 <section id="featured-items">
 
     <div class="container">
-
+        <h4>Product Categories</h4>
         <div class="product-categories">
-            
+            <p>insert product cat here</p>
         </div>
 
         {{-- Featured items header --}}
@@ -211,8 +204,6 @@
     </div>
 
 </section>
-
-</body>
 
 @endsection
 
