@@ -23,6 +23,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "slick-carousel": "^1.8.1",
         "tailwindcss": "^2.0.1"
     }
 }

@@ -2,45 +2,18 @@
 
 @section('content')
 
-        <section id="register">
+        <section id="login">
 
             <div class="container">
 
                 <div class="row align-items-center justify-content-center d-flex">
 
-                    <div class="col-lg-auto justify-content-center">
-
-                        <h1>Register</h1>
-
-                        <div>
-                            <input type="text" placeholder="First Name">
-                            <input type="text" placeholder="Last Name">
-                        </div>
-
-                        <div>
-                            <input type="text" placeholder="Address">
-                            <input type="text" placeholder="Barangay">
-                        </div>
-
-                        <div style="margin-bottom: 1rem;">
-                            <input type="text" placeholder="Email">
-                            <input type="text" placeholder="Password">
-                        </div>
-
-                        <div>
-                            <button class="btn active">Register</button>
-
-                        </div>
-
-                        {{-- <input type="checkbox" id="register1" name="register1" value="Register">
-                        <label for="register1">I agree to the terms of service.</label><br> --}}
-
-                        
-
-                        
+                    <div class="col-lg-12 justify-content-center d-grid">
+                        <h1>Log in</h1>
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Password">
+                        <button class="btn active">Log in</button>
                         <p>Forgot Password | Sign Up</p>
-                        
-
                     </div>
 
                 </div>

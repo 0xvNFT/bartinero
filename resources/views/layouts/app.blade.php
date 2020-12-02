@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-light justify-content-between sticky-top">
             <div class="container">
                 <div>
-                    <a href="#" class="navbar-brand"><img src="{{ asset('img/bart-logo-black.svg') }}" alt=""></a>
+                    <a href="/" class="navbar-brand"><img src="{{ asset('img/bart-logo-black.svg') }}" alt=""></a>
                 </div>
 
                 <div class="nav-links">

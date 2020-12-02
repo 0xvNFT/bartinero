@@ -36,3 +36,11 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('pages.register');
 });
+
+Route::get('/categories', function () {
+    return view('pages.categories');
+});
+
+Route::get('/dashboard', function () {
+    return view('pages.dashboard');
+});

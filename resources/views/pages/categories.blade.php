@@ -2,34 +2,32 @@
 
 @section('content')
  
-<section id="hero">
+<section id="cat-hero">
     <div class="container">
-        <div class="row align-items-center justify-content-center d-flex">
-            <div class="col-auto">
-                <img src="{{ asset('img/bart-hero-banner.png') }}" alt="">
-            </div>
-            
-            <div class="col-auto">
-                <h1>Make a deal today.<br>Trade with a Las Piñero.</h1>
-                <input type="text" placeholder="Find an item...">
-            </div>
+        <div class="slider">
+           
         </div>
     </div>
 </section>
 
-<section id="featured-items">
-
+<section id="cat-slider">
     <div class="container">
-        {{-- <h4>Product Categories</h4>
-        <div class="product-categories">
-            <p>insert product cat here</p>
-        </div> --}}
 
-        {{-- Featured items header --}}
-        <div class="row align-items-center justify-content-center featured-header">
+        <h4>Explore</h4>
+
+        <div class="wrapper">
+
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>
+            <div class="item4"></div>
+
+        </div>
+
+        <div class="row align-items-center justify-content-center featured-header" style="margin-top: 3.5rem;">
 
             <div class="col-lg-6">
-                <h4>Featured items</h4>
+                <h4>Featured deals</h4>
             </div>
 
             <div class="col-lg-6">
@@ -39,7 +37,6 @@
 
         </div>
 
-        {{-- Items grid --}}
         <div class="grid">
 
             <div class="row">
@@ -175,35 +172,15 @@
             
 
         </div>
-         
-    </div>
-        
-</section>
-
-<section id="about">
-
-    <div class="container">
-
-        <div class="row align-items-center justify-content-center d-flex">
-
-            
-            <div class="col-lg-6">
-                <img src="{{ asset('img/bart-about-right.png') }}" alt="">
-            </div>
-
-            <div class="col-lg-6">
-
-                <h4>Why barter?</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis ipsam minima voluptas. Doloremque modi animi nisi. Corporis voluptas, modi ullam officiis provident cumque eligendi tempora rerum obcaecati optio officia voluptate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis ipsam minima voluptas. Doloremque modi animi nisi.</p>
-                <button>Register now</button>
-
-            </div>
-
-        </div>
 
     </div>
+</section>
+
+<section id="info">
 
 </section>
+
+
 
 @endsection
 
