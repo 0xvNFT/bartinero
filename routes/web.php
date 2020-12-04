@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
+//imported to para sa [PagesController::class]
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Auth\RegisterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,26 +27,29 @@ use Illuminate\Support\Facades\Route;
 //     return view('pages.about');
 // });
 
-Route::get('/', function () {
-    return view('pages.index');
-});
+//mas better parin yung may @ index to dito mga items
+//Route::get('/', 'PagesController@index');
 
-Route::get('/single', function () {
-    return view('pages.single');
-});
+//homepage
+Route::get('/', function() {
+    return view ('home');
+})->name('home');
 
-Route::get('/login', function () {
-    return view('pages.login');
-});
+//Register
+Route::get('/register', [RegisterController::class, 'register'])->name('register');
+Route::POST('/register', [RegisterController::class, 'store']);
 
-Route::get('/register', function () {
-    return view('pages.register');
-});
+//Login
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::POST('/login', [LoginController::class, 'store']);
 
-Route::get('/categories', function () {
-    return view('pages.categories');
-});
+//Logout
+Route::POST('/logout', [LogoutController::class, 'store'])->name('logout');
 
-Route::get('/dashboard', function () {
-    return view('pages.dashboard');
-});
+//Dashboard
+Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard')
+->middleware('auth');//prevent unsign user viewing dashboard
+
+Route::get('/categories', [PagesController::class, 'categories'])->name('categories');
+
+Route::get('/single', [PagesController::class, 'single']);

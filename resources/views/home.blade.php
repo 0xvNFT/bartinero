@@ -10,7 +10,7 @@
             </div>
             
             <div class="col-auto">
-                <h1>THIS IS INDEX.<br>Trade with a Las Piñero.</h1>
+                <h1>Make a deal today.<br>Trade with a Las Piñero.</h1>
                 <input type="text" placeholder="Find an item...">
             </div>
         </div>

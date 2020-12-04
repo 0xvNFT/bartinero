@@ -25,8 +25,19 @@
                 </div>
 
                 <div class="nav-links">
-                    <a href="/login">Log In</a>
-                    <a href="/register">Register</a>
+                    {{--if else statement for login register |@auth & @endauth || @guest & @endguest|--}}
+                    @if (auth()->user()) 
+                        <a href="{{ route('dashboard') }}">Dashboard</a>
+                        <a href="">{{ auth()->user()->firstname }}</a>{{--calls the user that logged in--}}
+                        <form action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <button id="logout" type="submit">Logout</button>
+                        </form>
+                    @else
+                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('register') }}">Register</a>
+                    @endif
+
                 </div>
             </div>
         </nav>
